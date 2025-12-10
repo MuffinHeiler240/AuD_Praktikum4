@@ -75,6 +75,8 @@ bool search(Node* node, int value, int* comparisons) {
 
     int i = 0;
     // Durchsuche Schlüssel im aktuellen Knoten
+
+    (*comparisons)++;
     while (i < node->keyCount) {
         (*comparisons)++;
         if (value == node->keys[i]) {
